@@ -10,7 +10,10 @@ const { checkJwt, attachUser } = require("./middlewares/auth");
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors());
+app.use(cors({
+    origin: 'https://elitecard.ensolvers.com.ar',
+    credentials: true
+  }));
 
 const PORT = process.env.PORT || 5000;
 
