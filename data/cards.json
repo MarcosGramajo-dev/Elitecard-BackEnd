@@ -1,0 +1,49 @@
+[
+  {
+    "id": 1,
+    "name": "Sample Card",
+    "module_ids": [
+      1,
+      2
+    ],
+    "state": "active",
+    "type": "custom",
+    "url": "cards/sample-card",
+    "created": "2024-02-05T12:00:00Z",
+    "modified": "2024-02-05T12:00:00Z",
+    "modules": []
+  },
+  {
+    "id": 2,
+    "name": "Nueva Tarjeta",
+    "module_ids": [
+      1
+    ],
+    "state": "active",
+    "type": "custom",
+    "url": "cards/nueva-tarjeta",
+    "modules": [
+      {
+        "id": 1,
+        "name": "Header",
+        "description": "Header section of the card",
+        "code": "<header className='card-header'><h1>{title}</h1></header>",
+        "state": "active",
+        "type": "section",
+        "created": "2025-02-04T10:00:00Z",
+        "modified": "2025-02-04T10:00:00Z",
+        "fields": [
+          {
+            "name": "title",
+            "type": "text"
+          }
+        ],
+        "values": {
+          "title": "Titulo 1"
+        }
+      }
+    ],
+    "created": "2025-02-05T05:01:34.012Z",
+    "modified": "2025-02-05T05:01:34.012Z"
+  }
+]

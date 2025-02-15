@@ -1,0 +1,38 @@
+# 🚀 Ignorar dependencias de Node.js
+node_modules/
+package-lock.json
+yarn.lock
+
+# 🚀 Ignorar archivos de configuración de entorno
+.env
+.env.local
+.env.development
+.env.production
+
+# 🚀 Ignorar archivos de logs y caché
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+logs/
+.cache/
+
+# 🚀 Ignorar directorios de compilación de Vite y Express
+dist/
+build/
+
+# 🚀 Ignorar archivos del editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+
+# 🚀 Ignorar Docker (si usas Docker en tu proyecto)
+docker-compose.override.yml
+.dockerignore
+
+# 🚀 Ignorar archivos de despliegue y dependencias locales
+.DS_Store
+Thumbs.db

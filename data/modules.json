@@ -1,0 +1,29 @@
+[
+    {
+      "id": 1,
+      "name": "Header",
+      "description": "A simple header module",
+      "code": "<h1 className='text-xl font-bold'>{title}</h1>",
+      "state": "active",
+      "type": "text",
+      "created": "2024-02-05T12:00:00Z",
+      "modified": "2024-02-05T12:00:00Z",
+      "fields": [
+        { "name": "title", "type": "text" }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Image",
+      "description": "A module for images",
+      "code": "<img src={imageUrl} alt='Module Image' className='w-full' />",
+      "state": "active",
+      "type": "media",
+      "created": "2024-02-05T12:00:00Z",
+      "modified": "2024-02-05T12:00:00Z",
+      "fields": [
+        { "name": "imageUrl", "type": "text" }
+      ]
+    }
+  ]
+  
