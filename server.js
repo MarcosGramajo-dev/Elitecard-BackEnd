@@ -4,6 +4,7 @@ const cardRoutes = require("./routes/cardRoutes");
 const moduleRoutes = require("./routes/moduleRoutes");
 const userRoutes = require("./routes/userRoutes");
 const folderRoutes = require("./routes/folderRoutes");
+const publicRoutes = require("./routes/publicRoutes");
 
 const { checkJwt, attachUser } = require("./middlewares/auth");
 
@@ -18,6 +19,8 @@ const PORT = process.env.PORT || 5000;
 //     console.log("📌 Token recibido en Backend:", req.headers.authorization);
 //   next();
 // });
+
+app.use("/public", publicRoutes);
 
 app.use("/cards", checkJwt, cardRoutes);
 app.use("/modules", checkJwt, moduleRoutes);
